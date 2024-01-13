@@ -158,9 +158,7 @@ main {
   text-align: center;
   padding: 45px 35px 45px 35px;
 }
-/* .card-container .card img {
-  padding-top: 45px;
-} */
+
 .card-container .card-stats {
   color: #424242;
   font-size: 2.8rem;
@@ -186,6 +184,16 @@ main {
 }
 .sponsors-img-container img {
   width: 165px;
+}
+/* footer styles */
+footer {
+  max-width: 1440px;
+  margin: 70px auto;
+  margin-top: 130px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff4e7;
+  padding: 39px;
 }
 /* media queries styles */
 /* mobile styles added */
