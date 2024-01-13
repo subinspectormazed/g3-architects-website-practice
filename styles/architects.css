@@ -17,6 +17,14 @@
   font-weight: 600;
   border: 0;
 }
+.text-color-gray {
+  color: #727272;
+}
+.archcitects-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #131313;
+}
 /* nav styles added */
 header {
   background-color: rgba(255, 144, 14, 0.1);
@@ -27,11 +35,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.nav-title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #131313;
-}
+
 nav > ul {
   display: flex;
 }
@@ -95,6 +99,38 @@ main {
   color: #ff900e;
   font-weight: 700;
 }
+/* card styles */
+.facts-container {
+  margin-top: 70px;
+}
+.facts-text {
+  max-width: 542px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+.card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 45px 35px 45px 35px;
+}
+/* .card-container .card img {
+  padding-top: 45px;
+} */
+.card-container .card-stats {
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+.card-container .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
 /* media queries styles */
 /* mobile styles added */
 @media screen and (max-width: 576px) {
@@ -102,15 +138,20 @@ main {
     padding: 20px;
   }
   nav,
-  .team-container {
+  .team-container,
+  .card-container {
     flex-direction: column;
   }
   .team-img-container {
     grid-template-columns: 1fr;
   }
-  .team-content {
+  .team-content,
+  .card-container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .card-container {
+    gap: 20px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 960px) {
